@@ -11,11 +11,17 @@ h1 {
     background-color: aliceblue;
     border: 1px solid black;
     margin: 5rem auto 0 auto;
-    width: 1000px;
+    max-width: 1000px;
 
     /* Content */
     text-align: center;
-    font-size: 4rem;
+    font-size: 2rem;
     padding: 2rem 0 2rem 0;
     font-family: montserrat;
+}
+
+@media (min-width: 480px) {
+    h1 {
+        font-size: 4rem;
+    }
 }
