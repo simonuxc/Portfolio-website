@@ -1,0 +1,21 @@
+html {
+    font-size: 62.5%;
+}
+
+@font-face {
+    font-family: "montserrat";
+    src: url("Montserrat-Light.ttf");
+}
+
+h1 {
+    background-color: aliceblue;
+    border: 1px solid black;
+    margin: 5rem auto 0 auto;
+    width: 1000px;
+
+    /* Content */
+    text-align: center;
+    font-size: 4rem;
+    padding: 2rem 0 2rem 0;
+    font-family: montserrat;
+}
