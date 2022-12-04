@@ -7,27 +7,3 @@ html {
     src: url("Montserrat-Light.ttf");
 }
 
-h1 {
-    background-color: aliceblue;
-    border: 1px solid black;
-    margin: 5rem auto 0 auto;
-    max-width: 1000px;
-
-    /* Content */
-    text-align: center;
-    font-size: 2rem;
-    padding: 2rem 0 2rem 0;
-    font-family: montserrat;
-}
-
-@media screen and (min-width: 600px) {
-    h1 {
-        font-size: 3rem;
-    }
-}
-
-@media screen and (min-width: 780px) {
-    h1 {
-        font-size: 4rem;
-    }
-}
