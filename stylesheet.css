@@ -1,9 +1,27 @@
 html {
     font-size: 62.5%;
+    box-sizing: border-box;
+} 
+html, body {
+    padding: 0;
+    margin: 0;
 }
-
 @font-face {
     font-family: "montserrat";
     src: url("Montserrat-Light.ttf");
 }
 
+#main-header {
+    height: 100vh;
+    background: linear-gradient(180deg, rgba(0,22,36,1) 0%, rgba(26,81,124,1) 45%, rgba(0,144,255,1) 100%);
+    animation: load-page 2s 1s forwards;
+}
+
+@keyframes load-page {
+    0% {
+        height: 100vh;
+    }
+    100% {
+        height: 10rem;
+    }
+}
