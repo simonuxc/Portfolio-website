@@ -11,12 +11,18 @@ html, body {
     src: url("Montserrat-Light.ttf");
 }
 
-#main-header {
+#nav-bar {
     height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
     background: linear-gradient(180deg, rgba(0,22,36,1) 0%, rgba(26,81,124,1) 45%, rgba(0,144,255,1) 100%);
     animation: load-page 2s 1s forwards;
 }
-
+#nav-bar-buffer {
+    height: 10rem;
+}
 @keyframes load-page {
     0% {
         height: 100vh;
