@@ -7,11 +7,52 @@
     <link rel="stylesheet" href="stylesheet.css">
     <title>Samkavo parduotuvė</title>
 </head>
-<header>
-    <div id="nav-bar-buffer"></div>
-    <div id="nav-bar"></div>
-</header>
 <body>
-    <h1>Page</h1>
+    <header>
+        <div id="landing">
+            <div id="greeting">
+                <h1 class="landing__greeting landing__greeting--primary">Hi there!</h1>
+                <h2 class="landing__greeting landing__greeting--secondary">Let's get to know each other</h2>
+            </div>
+            <a href="#about-me" class="landing__about-me">About me</h2>
+        </div>
+    </header>
+    <main>
+        <a id="about-me"></a>
+        <section class="about-me">
+            <h1 class="section-heading">About me</h1>
+            <div class="about-me__introduction">
+                <div class="my-picture"></div>
+                <p>My name's Simon. I'm an aspiring artificial intelligence student at <span class="KTU">Kaunas University of Technology</span>.</p>
+                <p>I want to take part in various projects and participate in hackathons. I sure am free to suggestions, so <a class="link" href="#contacts">HMU!</a></p>
+            </div>
+            <div class="links-to-sections">
+                <div class="link-button">
+                    <a href="#activity" class="link-to-section">Activity</a>
+                </div>
+                <div class="link-button">
+                    <a href="#projects" class="link-to-section">Projects</a>
+                </div>
+                <div class="link-button">
+                    <a href="#contacts" class="link-to-section">Contacts</a>
+                </div>
+            </div>
+        </section>
+
+        <a id="activity"></a>
+        <section class="activity">
+            <h1 class="section-heading">Activity</h1>
+        </section>
+
+        <a id="projects"></a>
+        <section class="projects">
+            <h1 class="section-heading">Projects</h1>
+        </section>
+
+        <a id="contacts"></a>
+        <section class="contacts">
+            <h1 class="section-heading">Contacts</h1>
+        </section>
+    </main>
 </body>
 </html>
