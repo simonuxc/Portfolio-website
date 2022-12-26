@@ -94,9 +94,6 @@ a {
     }
 }
 /* Main section */
-main {
-    /* scroll-snap-align: start; */
-}
 section {
     min-height: 100vh;
     text-align: center;
