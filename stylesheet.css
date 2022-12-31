@@ -1,7 +1,7 @@
+/* Initial genetal styling */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
-    scroll-snap-type: y mandatory;
     scroll-behavior: smooth;
     background-color: #f8edeb;
     font-family: nunito-sans;
@@ -9,9 +9,6 @@ html {
 html, body {
     padding: 0;
     margin: 0;
-}
-header, main {
-    scroll-snap-align: start;
 }
 @font-face {
     font-family: "nunito-sans";
@@ -28,6 +25,11 @@ header, main {
 a {
     color: black;
     text-decoration: none;
+}
+section {
+    text-align: center;
+    padding: 0 0 0 0;
+    margin-bottom: 70px;
 }
 /* Landing page */
 #landing {
@@ -79,19 +81,14 @@ a {
         opacity: 1;
     }
 }
-/* Main section */
-section {
-    min-height: 100vh;
-    text-align: center;
-    padding: 0 0 0 0;
-}
+/* Generic class */
 .section-heading {
     font-size: 3rem;
-    margin: 0;
+    margin: 0 0 40px 0;
     padding: 30px 0 10px 0;
     font-weight: bolder;
-    font-style: italic;
 }
+/* Main section */
 .about-me__introduction {
     margin: 30px 0 0 0;
     font-size: 1.6rem;
@@ -157,13 +154,34 @@ section {
     transform: skew(0deg, 2deg);
 }
 .link-to-section {
-    /* border: 1px solid black; */
     display: inline-block;
     font-size: 2rem;
     font-weight: bolder;
-    font-style: italic;
-    /* width: 80px; */
+    text-decoration: underline;
+    text-underline-offset: 3px;
 }
 /* Activity */
+.activities-roadmap {
+    display: flex;
+    flex-direction: column-reverse;
+    width: 80%;
+    margin: 0 auto;
+}
+.activity {
+    max-width: 80%;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    margin-bottom: 30px;
+}
+.activity__title {
+    font-size: 1.6rem;
+}
+.activity:nth-of-type(2n + 1) {
+    align-self: flex-start;
+}
+.activity:nth-of-type(2n) {
+    align-self: flex-end;
+}
+/* Projects */
 
 /* Footer */
