@@ -29,7 +29,7 @@ a {
 section {
     text-align: center;
     padding: 0 0 0 0;
-    margin-bottom: 70px;
+    margin-bottom: 40px;
 }
 /* Landing page */
 #landing {
@@ -84,8 +84,8 @@ section {
 /* Generic class */
 .section-heading {
     font-size: 3rem;
-    margin: 0 0 40px 0;
-    padding: 30px 0 10px 0;
+    margin: 80px 0 40px 0;
+    /* padding: 30px 0 10px 0; */
     font-weight: bolder;
 }
 /* Main section */
@@ -97,9 +97,8 @@ section {
     flex-direction: column;
     gap: 20px;
     padding: 30px 40px;
-    background-color: #f6e7dc;
     box-shadow: 0 0 2px black;
-    transform: skew(0deg, 2deg);
+    /* transform: skew(0deg, 2deg); */
 }
 .my-picture {
     background-image: url("pictures/my_picture.jpg");
@@ -110,13 +109,9 @@ section {
     background-size: cover;
     border-radius: 30px;
     box-shadow: 2px 2px 4px 0px black;
-    /* reset skew */
-    transform: skew(0deg, -2deg);
 }
 .about-me__introduction p {
     margin: 0;
-    /* reset skew */
-    transform: skew(0deg, -2deg);
 }
 .KTU {
     white-space: nowrap;
@@ -133,20 +128,8 @@ section {
     row-gap: 20px;
     margin-top: 50px;
     padding: 20px 0;
-    background-color: #f6e7dc;
     box-shadow: 0 0 2px black;
-    transform: skew(0deg, -2deg);
 }
-.links-to-sections::before {
-    content: "";
-    position: absolute;
-    width: 100%;
-    height: 100vw;
-    top: -50%;
-    z-index: -1;
-    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' version='1.1' height='60px' width='200px'><text x='0' y='15' fill='white' font-size='20' opacity='0.6'>FIND OUT MORE!</text></svg>");
-    transform: rotate(45deg);
-  }
 /* Set buttons position in the grid */
 .link-button:nth-of-type(1) {
     grid-row: 1 / 1;
@@ -161,10 +144,6 @@ section {
     grid-column: 1 / span 2;
 }
 /* Buttons styling */
-.link-button {
-    /* reset skew */
-    transform: skew(0deg, 2deg);
-}
 .link-to-section {
     display: inline-block;
     font-size: 2rem;
@@ -223,6 +202,9 @@ section {
     background-image: url("svgs/icons8-facebook.svg");
 }
 /* Contacts */
+.contacts-section .section-heading {
+    margin-bottom: 20px;
+}
 .contacts-cta {
     font-size: 1.6rem;
 }
