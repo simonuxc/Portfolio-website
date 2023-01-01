@@ -1,4 +1,4 @@
-/* Initial genetal styling */
+/* Initial general styling */
 html {
     font-size: 62.5%;
     box-sizing: border-box;
@@ -34,7 +34,7 @@ a {
 section {
     text-align: center;
     padding: 0 0 0 0;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     max-width: 900px;
 }
 /* Landing page */
@@ -90,7 +90,7 @@ section {
 /* Generic class */
 .section-heading {
     font-size: 3rem;
-    margin: 80px 0 40px 0;
+    margin: 20px 0 40px 0;
     /* padding: 30px 0 10px 0; */
     font-weight: bolder;
 }
@@ -154,7 +154,6 @@ section {
 .link-to-section {
     display: inline-block;
     font-size: 2rem;
-    font-weight: bolder;
     text-decoration: underline;
     text-underline-offset: 3px;
 }
@@ -170,6 +169,7 @@ section {
     margin-bottom: 30px;
 }
 .activity {
+    min-width: 60%;
     max-width: 80%;
 }
 .activity__title, .project__title {
@@ -177,21 +177,60 @@ section {
 }
 .activity:nth-of-type(2n + 1) {
     align-self: flex-start;
+    padding-left: 10px;
 }
 .activity:nth-of-type(2n) {
     align-self: flex-end;
+    padding-right: 10px;
+}
+/* project */
+.project {
+    padding: 0 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.project__title {
+    margin-bottom: 0;
+}
+.project__date {
+    margin-top: 0;
+}
+.project-gallery__picture {
+    display: inline-block;
+    height: max-content;
+    overflow: hidden;
+}
+.project-gallery__picture img {
+    height: 90px;
+}
+/* skills */
+.links, .skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 .links {
+    gap: 1rem;
+}
+.skills-list {
+    column-gap: 2.5rem;
+    row-gap: 1rem;
+}
+.skill {
     display: flex;
-    justify-content: center;
-    gap: 10px;
+    align-items: center;
+    gap: 0.5rem;
 }
 .link-icon {
     background-size: cover;
     background-repeat: no-repeat;
     width: 30px;
     height: 30px;
+    display: inline-block;
 }
+/* Icons */
 .GitHub-icon {
     background-image: url("svgs/icons8-github.svg");
 }
@@ -207,6 +246,27 @@ section {
 .Facebook-icon {
     background-image: url("svgs/icons8-facebook.svg");
 }
+.Python-icon {
+    background-image: url("svgs/icons8-python.svg")
+}
+.Csharp-icon {
+    background-image: url("svgs/icons8-c-sharp-logo.svg")
+}
+.HTML-icon {
+    background-image: url("svgs/html-5-logo-svgrepo-com.svg")
+}
+.CSS-icon {
+    background-image: url("svgs/icons8-css3.svg")
+}
+.Cpp-icon {
+    background-image: url("svgs/icons8-c++.svg")
+}
+.Unity-icon {
+    background-image: url("svgs/icons8-unity.svg")
+}
+.Blender-icon {
+    background-image: url("svgs/icons8-blender-3d.svg")
+}
 /* Contacts */
 .contacts-section .section-heading {
     margin-bottom: 20px;
@@ -219,6 +279,10 @@ section {
 @media screen and (min-width: 600px) {
     .activities-roadmap {
         width: 600px;
+    }
+    /* Dealing with specificity */
+    .activity:nth-of-type(n) {
+        padding: 0;
     }
 }
 @media screen and (min-width: 900px) {
