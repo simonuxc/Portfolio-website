@@ -37,6 +37,27 @@ section {
     margin-bottom: 50px;
     max-width: 900px;
 }
+/* Enlarged picture */
+#backdrop {
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    display: none;
+    z-index: 2;
+    background-color: black;
+    opacity: 0.6;
+}
+#enlarged-picture {
+    top: 5vh;
+    left: 10vw;
+    width: 80vw;
+    /* height: 20vh; */
+    position: fixed;
+    display: none;
+    z-index: 2;
+    background-color: red;
+}
+
 /* Landing page */
 #landing {
     width: 100vw;
@@ -107,6 +128,7 @@ section {
     border-bottom: 1px solid black;
 }
 .my-picture {
+    display: inline-block;
     background-image: url("pictures/my_picture.jpg");
     width: 180px;
     height: 160px;
@@ -198,7 +220,7 @@ section {
 }
 .project-gallery__picture {
     display: inline-block;
-    height: max-content;
+    /* height: max-content; */
     overflow: hidden;
 }
 .project-gallery__picture img {
@@ -284,9 +306,15 @@ section {
     .activity:nth-of-type(n) {
         padding: 0;
     }
+    .project-gallery__picture img {
+        height: 120px;
+    }
 }
 @media screen and (min-width: 900px) {
     .activities-roadmap {
         width: 900px;
+    }
+    .project-gallery__picture img  {
+        height: 150px;
     }
 }
