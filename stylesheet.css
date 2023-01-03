@@ -48,8 +48,8 @@ section {
 }
 #enlarged-picture {
     top: 5vh;
-    left: 10vw;
-    width: 80vw;
+    left: 5vw;
+    width: 90vw;
     /* height: 20vh; */
     position: fixed;
     display: none;
@@ -345,6 +345,10 @@ section {
     }
     .project-gallery__picture img {
         height: 12rem;
+    }
+    #enlarged-picture {
+        width: 80vw;
+        left: 10vw;
     }
 }
 @media screen and (min-width: 900px) {
