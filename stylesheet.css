@@ -206,8 +206,7 @@ section {
     justify-content: space-between;
 }
 .activity {
-    min-width: 60%;
-    max-width: 80%;
+    width: 80%
 }
 .activity__title, .project__title {
     font-size: 1.6rem;
@@ -222,7 +221,7 @@ section {
 }
 /* project */
 .project {
-    padding: 0 1rem;
+    padding: 1rem 3.5rem;
     display: flex;
     flex-direction: column;
     gap: 1.6rem;
@@ -243,6 +242,10 @@ section {
 }
 .project-gallery__picture img:hover {
     cursor: pointer;
+}
+.project__description {
+    font-size: 1.4rem;
+    line-height: 1.8;
 }
 /* skills */
 .links {
@@ -336,8 +339,12 @@ section {
     .activities-roadmap {
         width: 60rem;
     }
+    .activity {
+        width: 70%;
+    }
     .project {
         width: 56rem;
+        padding: 0 1rem;
     }
     /* Dealing with specificity */
     .activity:nth-of-type(n) {
@@ -354,6 +361,9 @@ section {
 @media screen and (min-width: 900px) {
     .activities-roadmap {
         width: 90rem;
+    }
+    .activity {
+        width: 60%;
     }
     .projects-roadmap {
         flex-direction: row-reverse;
