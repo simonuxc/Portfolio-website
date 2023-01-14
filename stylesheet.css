@@ -198,14 +198,15 @@ section {
     justify-content: center;
 }
 .activity, .project {
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
     margin-bottom: 3rem;
 }
 .project {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
     justify-content: space-between;
 }
 .activity {
+    border-bottom: 1px solid black;
     width: 80%
 }
 .activity__title, .project__title {
@@ -238,7 +239,7 @@ section {
     overflow: hidden;
 }
 .project-gallery__picture img {
-    height: 9rem;
+    height: 13rem;
 }
 .project-gallery__picture img:hover {
     cursor: pointer;
@@ -343,7 +344,7 @@ section {
         width: 70%;
     }
     .project {
-        width: 56rem;
+        width: 62rem;
         padding: 0 1rem;
     }
     /* Dealing with specificity */
@@ -351,7 +352,7 @@ section {
         padding: 0;
     }
     .project-gallery__picture img {
-        height: 12rem;
+        height: 17rem;
     }
     #enlarged-picture {
         width: 80vw;
@@ -361,15 +362,16 @@ section {
 @media screen and (min-width: 900px) {
     .activities-roadmap {
         width: 90rem;
+        gap: 2rem;
     }
     .activity {
+        border-top: 1px solid black;
         width: 60%;
     }
-    .projects-roadmap {
-        flex-direction: row-reverse;
-        flex-wrap: wrap-reverse;
+    .project {
+        width: 80rem;
     }
     .project-gallery__picture img  {
-        height: 15rem;
+        height: 20rem;
     }
 }
