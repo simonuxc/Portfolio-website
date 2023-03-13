@@ -318,6 +318,9 @@ section {
 .Blender-icon {
     background-image: url("svgs/icons8-blender-3d.svg")
 }
+.SQL-icon {
+    background-image: url("svgs/icons8-sql-60.png");
+}
 /* Contacts */
 .contacts-section .section-heading {
     margin-bottom: 20px;
